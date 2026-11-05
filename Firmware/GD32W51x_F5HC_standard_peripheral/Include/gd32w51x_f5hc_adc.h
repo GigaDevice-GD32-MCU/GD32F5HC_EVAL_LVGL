@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_adc.h
     \brief   definitions for the ADC
     
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -33,8 +33,8 @@ OF SUCH DAMAGE.
 */
 
 
-#ifndef gd32w51x_f5hc_ADC_H
-#define gd32w51x_f5hc_ADC_H
+#ifndef GD32W51x_F5HC_ADC_H
+#define GD32W51x_F5HC_ADC_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -527,5 +527,5 @@ FlagStatus adc_interrupt_flag_get(uint32_t int_flag);
 /* clear the ADC flag */
 void adc_interrupt_flag_clear(uint32_t int_flag);
 
-#endif /* gd32w51x_f5hc_ADC_H */
+#endif /* GD32W51x_F5HC_ADC_H */
 

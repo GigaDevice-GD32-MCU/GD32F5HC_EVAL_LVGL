@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_hau.h
     \brief   definitions for the HAU
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_HAU_H
-#define gd32w51x_f5hc_HAU_H
+#ifndef GD32W51x_F5HC_HAU_H
+#define GD32W51x_F5HC_HAU_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -220,4 +220,4 @@ FlagStatus hau_interrupt_flag_get(uint32_t int_flag);
 /* clear the HAU interrupt flag status */
 void hau_interrupt_flag_clear(uint32_t int_flag);
 
-#endif /* gd32w51x_f5hc_HAU_H */
+#endif /* GD32W51x_F5HC_HAU_H */

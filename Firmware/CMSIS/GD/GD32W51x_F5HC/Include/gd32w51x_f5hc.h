@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc.h
     \brief   general definitions for gd32w51x_f5hc
     
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -90,7 +90,7 @@
 /* GD32W51x firmware library version number */
 #define __gd32w51x_f5hc_STDPERIPH_VERSION_MAIN   (0x02) /*!< [31:24] main version */
 #define __gd32w51x_f5hc_STDPERIPH_VERSION_SUB1   (0x00) /*!< [23:16] sub1 version */
-#define __gd32w51x_f5hc_STDPERIPH_VERSION_SUB2   (0x00) /*!< [15:8]  sub2 version */
+#define __gd32w51x_f5hc_STDPERIPH_VERSION_SUB2   (0x01) /*!< [15:8]  sub2 version */
 #define __gd32w51x_f5hc_STDPERIPH_VERSION_RC     (0x00) /*!< [7:0]  release candidate */ 
 #define __gd32w51x_f5hc_STDPERIPH_VERSION        ((__gd32w51x_f5hc_STDPERIPH_VERSION_MAIN << 24)\
                                             |(__gd32w51x_f5hc_STDPERIPH_VERSION_SUB1 << 16)\

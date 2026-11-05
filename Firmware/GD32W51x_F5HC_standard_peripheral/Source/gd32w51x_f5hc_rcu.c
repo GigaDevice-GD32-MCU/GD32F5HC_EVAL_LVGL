@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_rcu.c
     \brief   RCU driver
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -483,8 +483,6 @@ void rcu_rfpll_cal_disable(void)
     \param[out] none
     \retval     none
 */
-
-#if defined (GD32W515)
 void rcu_control_unit_powerup(rcu_unit_enum rcu_unit)
 {
     RCU_REG_VAL(rcu_unit) |= BIT(RCU_BIT_POS(rcu_unit));
@@ -519,10 +517,6 @@ void rcu_control_unit_powerdown(rcu_unit_enum rcu_unit)
     \param[out] none
     \retval     none
 */
-
-#endif
-
-
 void rcu_system_clock_source_config(uint32_t ck_sys)
 {
     uint32_t reg;

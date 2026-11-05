@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_dci.h
     \brief   definitions for the DCI
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -31,8 +31,8 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
 OF SUCH DAMAGE.
 */
-#ifndef gd32w51x_f5hc_DCI_H
-#define gd32w51x_f5hc_DCI_H
+#ifndef GD32W51x_F5HC_DCI_H
+#define GD32W51x_F5HC_DCI_H
 
 #if defined (GD32W515)
 
@@ -234,4 +234,4 @@ FlagStatus dci_interrupt_flag_get(uint32_t int_flag);
 void dci_interrupt_flag_clear(uint32_t int_flag);
 
 #endif /* defined (GD32W515) */
-#endif /* gd32w51x_f5hc_DCI_H */
+#endif /* GD32W51x_F5HC_DCI_H */

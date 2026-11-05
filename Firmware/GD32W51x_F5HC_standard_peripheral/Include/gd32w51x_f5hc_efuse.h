@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_efuse.h
     \brief   definitions for the EFUSE
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_EFUSE_H
-#define gd32w51x_f5hc_EFUSE_H
+#ifndef GD32W51x_F5HC_EFUSE_H
+#define GD32W51x_F5HC_EFUSE_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -312,4 +312,4 @@ FlagStatus efuse_interrupt_flag_get(efuse_int_flag_enum int_flag);
 /* clear EFUSE pending interrupt flag */
 void efuse_interrupt_flag_clear(efuse_clear_int_flag_enum int_cflag);
 
-#endif /* gd32w51x_f5hc_EFUSE_H */
+#endif /* GD32W51x_F5HC_EFUSE_H */

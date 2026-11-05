@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_tzpcu.h
     \brief   definitions for the TZPCU
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_TZPCU_H
-#define gd32w51x_f5hc_TZPCU_H
+#ifndef GD32W51x_F5HC_TZPCU_H
+#define GD32W51x_F5HC_TZPCU_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -725,4 +725,4 @@ uint32_t tzpcu_tziac_flag_get(uint32_t periph_flag);
 /* clear illegal access interrupt flag */
 void tzpcu_tziac_flag_clear(uint32_t periph_flag);
 
-#endif /* gd32w51x_f5hc_TZPCU_H */
+#endif /* GD32W51x_F5HC_TZPCU_H */

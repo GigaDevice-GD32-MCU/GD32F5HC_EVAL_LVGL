@@ -2,12 +2,12 @@
 ;    \file    startup_gd32w51x.S
 ;    \brief   start up file
 ;
-;    \version 2025-09-30, V2.0.0, firmware for GD32W51x
+;    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 ;*/
 ;
 ;/*
 ; * Copyright (c) 2009-2021 Arm Limited. All rights reserved.
-; * Copyright (c) 2025, GigaDevice Semiconductor Inc.
+; * Copyright (c) 2026, GigaDevice Semiconductor Inc.
 ; * SPDX-License-Identifier: Apache-2.0
 ; *
 ; * Licensed under the Apache License, Version 2.0 (the License); you may
@@ -26,7 +26,7 @@
 
   .syntax unified
   .cpu cortex-m33
-  .fpu softvfp
+  .fpu fpv5-sp-d16
   .thumb
 
 .global  Default_Handler

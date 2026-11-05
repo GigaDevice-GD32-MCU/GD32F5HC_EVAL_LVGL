@@ -2,12 +2,12 @@
     \file    gd32f5hcri_flash.ld
     \brief   linker script file
 
-    \version 2025-06-30, V2.0.0, firmware for GD32W51x_B513_F5HC
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
  * Copyright (c) 2009-2020 Arm Limited. All rights reserved.
- * Copyright (c) 2025, GigaDevice Semiconductor Inc.
+ * Copyright (c) 2026, GigaDevice Semiconductor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -36,7 +36,7 @@ ENTRY(Reset_Handler)
 
 SECTIONS
 {
-  __stack_size = DEFINED(__stack_size) ? __stack_size : 8K;
+  __stack_size = DEFINED(__stack_size) ? __stack_size : 2K;
   __heap_size = DEFINED(__heap_size) ? __heap_size : 1K;
 
   /* ISR vectors */

@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_sdio.h
     \brief   definitions for the SDIO
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -31,8 +31,8 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
 OF SUCH DAMAGE.
 */
-#ifndef gd32w51x_f5hc_SDIO_H
-#define gd32w51x_f5hc_SDIO_H
+#ifndef GD32W51x_F5HC_SDIO_H
+#define GD32W51x_F5HC_SDIO_H
 
 #if defined (GD32W515)
 
@@ -430,4 +430,4 @@ void sdio_ceata_command_completion_enable(void);
 void sdio_ceata_command_completion_disable(void);
 
 #endif /* defined (GD32W515) */
-#endif /* gd32w51x_f5hc_SDIO_H */
+#endif /* GD32W51x_F5HC_SDIO_H */

@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_gpio.h
     \brief   definitions for the GPIO
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_GPIO_H
-#define gd32w51x_f5hc_GPIO_H
+#ifndef GD32W51x_F5HC_GPIO_H
+#define GD32W51x_F5HC_GPIO_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -420,4 +420,4 @@ void gpio_bit_reset_sec_cfg(uint32_t gpio_periph, uint32_t pin);
 /* get GPIO pin secure configuration bit status */
 FlagStatus gpio_sec_cfg_bit_get(uint32_t gpio_periph, uint32_t pin);
 
-#endif /* gd32w51x_f5hc_GPIO_H */
+#endif /* GD32W51x_F5HC_GPIO_H */
