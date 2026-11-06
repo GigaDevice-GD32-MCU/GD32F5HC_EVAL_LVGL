@@ -162,6 +162,6 @@ void FPU_IRQHandler(void)
 void SysTick_Handler(void)
 {
     //led_spark();
-    g_systick_ms++;
+    lv_tick_inc(1);
     delay_decrement();
 }
