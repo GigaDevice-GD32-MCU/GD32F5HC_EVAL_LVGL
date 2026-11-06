@@ -2,7 +2,7 @@
     \file  gd32w51x_f5hc_sqpi.h
     \brief definitions for the SQPI
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_SQPI_H
-#define gd32w51x_f5hc_SQPI_H
+#ifndef GD32W51x_F5HC_SQPI_H
+#define GD32W51x_F5HC_SQPI_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -133,4 +133,4 @@ uint32_t sqpi_low_id_receive(void);
 /* SQPI receive high ID*/
 uint32_t sqpi_high_id_receive(void);
 
-#endif /* gd32w51x_f5hc_SQPI_H */
+#endif /* GD32W51x_F5HC_SQPI_H */

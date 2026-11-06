@@ -2,11 +2,11 @@
     \file    audio_out_itf.c
     \brief   audio OUT (playback) interface functions
 
-    \version 2025-06-30, V2.0.0, firmware for GD32W51x_B513_F5HC
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
-    Copyright (c) 2025, GigaDevice Semiconductor Inc.
+    Copyright (c) 2026, GigaDevice Semiconductor Inc.
 
     Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:

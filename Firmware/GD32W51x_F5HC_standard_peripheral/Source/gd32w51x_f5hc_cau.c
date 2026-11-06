@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_cau.c
     \brief   CAU driver
     
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*

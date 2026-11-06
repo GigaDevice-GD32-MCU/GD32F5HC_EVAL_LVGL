@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_usart.h
     \brief   definitions for the USART
     
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_USART_H
-#define gd32w51x_f5hc_USART_H
+#ifndef GD32W51x_F5HC_USART_H
+#define GD32W51x_F5HC_USART_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -626,4 +626,4 @@ FlagStatus usart_interrupt_flag_get(uint32_t usart_periph, usart_interrupt_flag_
 /* clear USART interrupt flag */
 void usart_interrupt_flag_clear(uint32_t usart_periph, usart_interrupt_flag_enum int_flag);
 
-#endif /* gd32w51x_f5hc_USART_H */
+#endif /* GD32W51x_F5HC_USART_H */

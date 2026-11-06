@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_dma.c
     \brief   definitions for the DMA
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_DMA_H
-#define gd32w51x_f5hc_DMA_H
+#ifndef GD32W51x_F5HC_DMA_H
+#define GD32W51x_F5HC_DMA_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -494,4 +494,4 @@ void dma_priv_config(uint32_t dma_periph, dma_channel_enum channelx, uint32_t pr
 FlagStatus dma_illegal_access_flag_get(uint32_t dma_periph, dma_channel_enum channelx);
 /* clear DMA channel illegal flag */
 void dma_illegal_access_flag_clear(uint32_t dma_periph, dma_channel_enum channelx);
-#endif /* gd32w51x_f5hc_DMA_H */
+#endif /* GD32W51x_F5HC_DMA_H */

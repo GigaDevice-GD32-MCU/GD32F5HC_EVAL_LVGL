@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_pmu.h
     \brief   definitions for the PMU
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_PMU_H
-#define gd32w51x_f5hc_PMU_H
+#ifndef GD32W51x_F5HC_PMU_H
+#define GD32W51x_F5HC_PMU_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -94,12 +94,12 @@ OF SUCH DAMAGE.
 #endif /* defined GD32F5HC */
 #define PMU_CS0_LDRF                  BITS(18,19)                           /*!< Low-driver mode ready flag */
 #if defined (GD32F5HC)
-#define PMU_CS0_WUP5_EDGE             BIT(24)                               /*!< WKUP Pin0 edge selection */
-#define PMU_CS0_WUP6_EDGE             BIT(25)                               /*!< WKUP Pin1 edge selection */
-#define PMU_CS0_WUP7_EDGE             BIT(26)                               /*!< WKUP Pin2 edge selection */
-#define PMU_CS0_WUPEN5                BIT(27)                               /*!< WKUP Pin0 (PD4) enable */
-#define PMU_CS0_WUPEN6                BIT(28)                               /*!< WKUP Pin1 (PB0) enable */
-#define PMU_CS0_WUPEN7                BIT(29)                               /*!< WKUP Pin2 (PD3) enable */
+#define PMU_CS0_WUPEN5                BIT(24)                               /*!< WKUP Pin5 (PD4) enable */
+#define PMU_CS0_WUPEN6                BIT(25)                               /*!< WKUP Pin6 (PB0) enable */
+#define PMU_CS0_WUPEN7                BIT(26)                               /*!< WKUP Pin7 (PD3) enable */
+#define PMU_CS0_WUP5_EDGE             BIT(27)                               /*!< WKUP Pin5 edge selection */
+#define PMU_CS0_WUP6_EDGE             BIT(28)                               /*!< WKUP Pin6 edge selection */
+#define PMU_CS0_WUP7_EDGE             BIT(29)                               /*!< WKUP Pin7 edge selection */
 #endif /* defined GD32F5HC */
 
 /* PMU_CTL1 */
@@ -383,4 +383,4 @@ FlagStatus pmu_flag_get(uint32_t flag);
 /* clear flag bit */
 void pmu_flag_clear(uint32_t flag);
 
-#endif /* gd32w51x_f5hc_PMU_H */
+#endif /* GD32W51x_F5HC_PMU_H */

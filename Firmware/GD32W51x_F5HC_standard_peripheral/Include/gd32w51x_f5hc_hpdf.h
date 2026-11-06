@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_hpdf.h
     \brief   definitions for the HPDF
     
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -35,8 +35,8 @@ OF SUCH DAMAGE.
 */
 
 #if defined (GD32W515)
-#ifndef gd32w51x_f5hc_HPDF_H
-#define gd32w51x_f5hc_HPDF_H
+#ifndef GD32W51x_F5HC_HPDF_H
+#define GD32W51x_F5HC_HPDF_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -684,6 +684,6 @@ FlagStatus hpdf_interrupt_flag_get(hpdf_filter_enum filtery, hpdf_interrupt_flag
 /* clear the HPDF interrupt flags */
 void hpdf_interrupt_flag_clear(hpdf_filter_enum filtery, hpdf_interrupt_flag_enum int_flag);
 
-#endif /* gd32w51x_f5hc_HPDF_H */
+#endif /* GD32W51x_F5HC_HPDF_H */
 
 #endif /* defined (GD32W515) */ 

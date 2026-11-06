@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_spi.c
     \brief   SPI driver
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -911,6 +911,9 @@ void spi_i2s_interrupt_disable(uint32_t spi_periph, uint8_t interrupt)
       \arg        SPI_I2S_INT_FLAG_FERR: format error interrupt flag
     \param[out] none
     \retval     FlagStatus: SET or RESET
+    \note       After the interrupt enable bit is cleared, if the hardware flag remains set, this API will still return RESET.
+                Therefore, in an ISR or during the interrupt-disable flow, this API alone must not be relied upon to determine whether the flag should be cleared.
+                The corresponding flag must be cleared according to the module-specific rules, and the NVIC-pending bit should also be cleared when necessary.
 */
 FlagStatus spi_i2s_interrupt_flag_get(uint32_t spi_periph, uint8_t interrupt)
 {

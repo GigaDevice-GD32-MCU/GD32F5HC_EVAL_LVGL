@@ -2,7 +2,7 @@
     \file    gd32w51x_f5hc_trng.h
     \brief   definitions for the TRNG
 
-    \version 2026-04-15, V2.0.0, firmware for gd32w51x_f5hc
+    \version 2026-08-08, V2.0.1, firmware for gd32w51x_f5hc
 */
 
 /*
@@ -32,8 +32,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 
-#ifndef gd32w51x_f5hc_TRNG_H
-#define gd32w51x_f5hc_TRNG_H
+#ifndef GD32W51x_F5HC_TRNG_H
+#define GD32W51x_F5HC_TRNG_H
 
 #include "gd32w51x_f5hc.h"
 
@@ -113,4 +113,4 @@ FlagStatus trng_interrupt_flag_get(trng_int_flag_enum int_flag);
 /* clear TRNG interrupt flag status */
 void trng_interrupt_flag_clear(trng_int_flag_enum int_flag);
 
-#endif /* gd32w51x_f5hc_TRNG_H */
+#endif /* GD32W51x_F5HC_TRNG_H */

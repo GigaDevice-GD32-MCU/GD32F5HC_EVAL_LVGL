@@ -61,11 +61,10 @@ int main(void)
     /* GUI Tack */
     lv_init();
     lv_port_disp_init();
-//    lv_port_indev_init();
 
     lv_demo_widgets();
     lv_demo_widgets_start_slideshow();
-//    lv_demo_benchmark();
+
     while(1){
         lv_timer_handler_run_in_period(5);
     }
