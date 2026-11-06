@@ -37,9 +37,6 @@ OF SUCH DAMAGE.
 
 #include <stdint.h>
 
-/* volatile: LVGL tick source, written in SysTick ISR */
-extern volatile uint32_t g_systick_ms;
-
 /* configure systick */
 void systick_config(void);
 /* delay a time in milliseconds */

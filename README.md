@@ -9,12 +9,36 @@ The project uses landscape orientation with the `RGB565` pixel format and 16-bit
 
 Project toolchains include `Keil MDK-ARM (ARM Compiler 6)`, `IAR`, and `GD32EmbeddedBuilder`.
 
+## Benchmark
+
+The following benchmark results were obtained using `LVGL 9.6.0` with software rendering and double buffering.
+
+| Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
+|:------------------------- | --------:| --------:| ---------:| -----------:| ----------:|
+| Empty screen              | 86%      | 18       | 46        | 4           | 42         |
+| Moving wallpaper          | 100%     | 20       | 47        | 9           | 38         |
+| Single rectangle          | 13%      | 32       | <1        | <1          | <1         |
+| Multiple rectangles       | 55%      | 29       | 18        | 4           | 14         |
+| Multiple RGB images       | 15%      | 32       | 1         | 1           | <1         |
+| Multiple ARGB images      | 16%      | 32       | 3         | 3           | <1         |
+| Rotated ARGB images       | 61%      | 31       | 20        | 20          | <1         |
+| Multiple labels           | 31%      | 30       | 8         | 6           | 2          |
+| Screen sized text         | 97%      | 20       | 47        | 28          | 19         |
+| Multiple arcs             | 12%      | 33       | <1        | <1          | <1         |
+| Containers                | 15%      | 32       | 4         | 4           | <1         |
+| Containers with overlay   | 91%      | 20       | 47        | 16          | 31         |
+| Containers with opa       | 34%      | 31       | 12        | 8           | 4          |
+| Containers with opa_layer | 33%      | 30       | 14        | 13          | 1          |
+| Containers with scrolling | 98%      | 20       | 47        | 14          | 33         |
+| Widgets demo              | 99%      | 27       | 31        | 13          | 18         |
+| All scenes avg.           | 53%      | 27       | 20        | 8           | 12         |
+
 ## Specification
 
 - **MCU:** GD32F5HCRI (Cortex-M33, 200MHz)
 - **RAM:** 320KB internal SRAM
 - **Flash:** 2048KB internal
-- **GPU:** None 
+- **GPU:** None
 - **Resolution:** 240*320
 - **Display Size:** 2.2 inch
 - **Interface:** SPI
@@ -66,9 +90,9 @@ The available debug options depend on your IDE and project configuration.
 
 ## Third-Party Components
 
-| Category | In Use | Component | Version   | License |
-| -------- | ------ | --------- | --------- | ------- |
-| GUI      | Yes    | `LVGL`    | `V8.3.11` | `MIT`   |
+| Category | In Use | Component | Version  | License |
+| -------- | ------ | --------- | -------- | ------- |
+| GUI      | Yes    | `LVGL`    | `V9.6.0` | `MIT`   |
 
 When adding a third-party library, update this table and retain its license text and copyright notices.
 
