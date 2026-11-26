@@ -41,11 +41,9 @@ OF SUCH DAMAGE.
 
 
 #include "lvgl.h"
-#include "lv_port_indev.h"
 #include "lv_port_disp.h"
-
 #include "lv_demos.h"
-#include "lv_widgets_slideshow.h"
+
 
 /*!
     \brief      toggle the led every 500ms
@@ -62,9 +60,10 @@ int main(void)
     lv_init();
     lv_port_disp_init();
 
+
     lv_demo_widgets();
     lv_demo_widgets_start_slideshow();
-
+	
     while(1){
         lv_timer_handler_run_in_period(5);
     }
